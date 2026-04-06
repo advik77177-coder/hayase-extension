@@ -1,0 +1,18 @@
+{
+  "name": "Spike Anime",
+  "version": "1.0.0",
+  "description": "Basic anime source",
+  "type": "anime",
+  "actions": [
+    {
+      "name": "search",
+      "type": "input",
+      "handler": "search"
+    },
+    {
+      "name": "play",
+      "type": "output",
+      "handler": "play"
+    }
+  ]
+}
