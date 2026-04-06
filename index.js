@@ -1,18 +1,19 @@
-export async function search(query) {
-  return [
-    {
-      title: query,
-      id: "1",
-      magnet: "magnet:?xt=urn:btih:EXAMPLE"
-    }
-  ];
-}
+export default {
+  async search(query) {
+    return [
+      {
+        id: "1",
+        title: query
+      }
+    ];
+  },
 
-export async function play(item) {
-  return [
-    {
-      url: item.magnet,
-      type: "torrent"
-    }
-  ];
-}
+  async streams(id) {
+    return [
+      {
+        url: "magnet:?xt=urn:btih:EXAMPLE",
+        type: "torrent"
+      }
+    ];
+  }
+};
