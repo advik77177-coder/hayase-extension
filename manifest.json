@@ -1,13 +1,11 @@
 {
   "name": "Spike Anime",
   "version": "1.0.0",
-  "sources": [
+  "extensions": [
     {
-      "name": "Test Source",
-      "type": "torrent",
-      "search": {
-        "url": "https://nyaa.si/?q={query}"
-      }
+      "name": "Test Extension",
+      "type": "anime",
+      "entry": "index.js"
     }
   ]
 }
